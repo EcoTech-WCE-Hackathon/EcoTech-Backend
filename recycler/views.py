@@ -1,4 +1,3 @@
-from unicodedata import decimal
 from dashboard.models import Report
 from recycler.models import Recycler
 from .serializers import CreateRecyclerProfileSerializer, WasteListSerializer
