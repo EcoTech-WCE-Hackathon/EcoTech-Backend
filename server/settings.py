@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "mobile.apps.MobileConfig",
     "authentication.apps.AuthenticationConfig",
     "corsheaders",
+    "drf_yasg",
 ]
 
 MIDDLEWARE = [
