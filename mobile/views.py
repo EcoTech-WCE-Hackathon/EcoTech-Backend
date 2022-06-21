@@ -109,3 +109,9 @@ class ReportEWasteAPI(generics.GenericAPIView):
         return Response(
             {"message": "successfully submitted", "data": {"approval_status": approved}}
         )
+
+
+class checkPredictorAPI(generics.GenericAPIView):
+    def post(self, request, *args, **kwargs):
+        # image = request.data["image"]
+        return Response({"final": Predictor.getPrediction()})
